@@ -1,0 +1,26 @@
+{
+  "name": "react-native-batch",
+  "version": "0.0.0",
+  "description": "React Native integration of the Batch SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dangerfarms/react-native-batch.git"
+  },
+  "keywords": [
+    "react-native",
+    "batch"
+  ],
+  "author": {
+    "name": "Danger Farms (Balint Vekerdy)",
+    "email": "balint@dangerfarms.com",
+    "url": "https://github.com/dangerfarms"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.50.0"
+  }
+}
