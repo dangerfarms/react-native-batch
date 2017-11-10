@@ -1,6 +1,6 @@
 {
   "name": "react-native-batch",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React Native integration of the Batch SDK",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.50.0"
+    "react-native": "*"
   }
 }
