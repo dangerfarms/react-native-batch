@@ -19,16 +19,25 @@ Contributions welcome.
 1. Copy the resulting `.tgz` file to your project root
 1. Navigate to your projects root and run `yarn add ./[zipfile name].tgz`
 
-### In the future
+### In the near future
 
 `yarn add react-native-batch`
 
+Issues? See the Manual installation section.
 
-### Mostly automatic installation
+## Usage
+```javascript
+import RNBatch from 'react-native-batch';
 
-`react-native link react-native-batch`
+// TODO: Usage will be here
+RNBatch;
+```
 
-### Manual installation
+## Manual installation
+
+Using the installation methods in Getting started section is highly recommended. 
+
+However if you run into issues, this section should help troubleshooting.
 
 
 #### iOS
@@ -52,14 +61,6 @@ Contributions welcome.
   	```
       compile project(':react-native-batch')
   	```
-
-## Usage
-```javascript
-import RNBatch from 'react-native-batch';
-
-// TODO: Usage will be here
-RNBatch;
-```
 
 ## Push notification setup 
 
@@ -88,3 +89,4 @@ Soon.
 1. Attributes support
 1. Tracking Transactions
 1. ...
+
