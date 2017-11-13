@@ -11,11 +11,22 @@ Contributions welcome.
 
 ## Getting started
 
-`$ npm install react-native-batch --save`
+### While in heavy development
+
+1. Clone the project
+1. `yarn`
+1. `npm pack`
+1. Copy the resulting `.tgz` file to your project root
+1. Navigate to your projects root and run `yarn add ./[zipfile name].tgz`
+
+### In the future
+
+`yarn add react-native-batch`
+
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-batch`
+`react-native link react-native-batch`
 
 ### Manual installation
 
@@ -42,26 +53,29 @@ Contributions welcome.
       compile project(':react-native-batch')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNBatch.sln` in `node_modules/react-native-batch/windows/RNBatch.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Batch.RNBatch;` to the usings at the top of the file
-  - Add `new RNBatchPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
 ```javascript
 import RNBatch from 'react-native-batch';
 
-// TODO: What to do with the module?
+// TODO: Usage will be here
 RNBatch;
 ```
 
-# Contributing
+## Push notification setup 
 
-## Roadmap
+### Android push notification setup
+
+Follow the instructions in the [Batch integration docs](https://dashboard.batch.com) > your Android app dashboard > Integrate.
+
+### iOS push notification setup
+
+Follow the instructions in the [Batch integration docs](https://dashboard.batch.com) > your iOS app dashboard > Integrate.
+
+## Contributing
+
+Soon.
+
+### Roadmap
 1. Initialize SDK
 1. Configure push notifications
 1. Custom User IDs 
