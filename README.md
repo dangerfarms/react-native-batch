@@ -1,6 +1,6 @@
 :warning: Work in progress :warning:
 
-# react-native-batch
+# @dangerfarms/react-native-batch
 React Native integration of the Batch.com SDK
 
 # Aim
@@ -12,22 +12,13 @@ Contributions welcome.
 
 ## Getting started
 
-### While in heavy development
-
-1. Clone the project
-1. `npm pack`
-1. Copy the resulting `.tgz` file to your project root
-1. Navigate to your projects root and run `npm install ./react-native-batch-[version].tgz`
-
-### In the near future
-
-`yarn add react-native-batch`
+`yarn add @dangerfarms/react-native-batch`
 
 Issues? See the Manual installation section.
 
 ## Usage
 ```javascript
-import Batch from 'react-native-batch';
+import Batch from '@dangerfarms/react-native-batch';
 
 Batch.registerForRemoteNotifications();
 ```
@@ -42,7 +33,7 @@ However if you run into issues, this section should help troubleshooting.
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-batch` and add `RNBatch.xcodeproj`
+2. Go to `node_modules` ➜ `@dangerfarms/react-native-batch` and add `RNBatch.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNBatch.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -53,52 +44,54 @@ However if you run into issues, this section should help troubleshooting.
   - Add `new RNBatchPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-batch'
-  	project(':react-native-batch').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-batch/android')
+  	include ':@dangerfarms_react-native-batch'
+  	project(':@dangerfarms_react-native-batch').projectDir = new File(rootProject.projectDir, 	'../node_modules/@dangerfarms/react-native-batch/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-batch')
+      compile project(':@dangerfarms_react-native-batch')
   	```
 
 ## Push notification setup 
 
 ### Android push notification setup
 
+- Go to the Batch dashboard, create an Android app and setup your GCM configuration.
 - Follow the instructions in the [Batch integration prerequisite docs](https://batch.com/doc/android/prerequisites.html).
-- Add your Sender ID and API Key to `android/app/src/main/res/values/strings.xml`. It should look like this: 
-```xml
-<resources>
-    ...
-    <string name="BATCH_API_KEY_DEV">%YOUR_BATCH_DEV_API_KEY%</string> <!-- Used when built in development mode -->
-    <string name="BATCH_API_KEY_PROD">%YOUR_BATCH_PROD_API_KEY%</string>
-    <string name="GCM_SENDER_ID">%YOUR_GCM_SENDER_ID%</string>
-</resources>
-```
-
+- In `android/app/build.gradle`, provide in your config:
+    ```
+    defaultConfig {
+      ...
+      resValue "string", "GCM_SENDER_ID", "%YOUR_GCM_SENDER_ID%"
+      resValue "string", "BATCH_API_KEY_DEV", "%YOUR_BATCH_DEV_API_KEY%"
+      resValue "string", "BATCH_API_KEY_PROD", "%YOUR_BATCH_PROD_API_KEY%"
+    }
+    ```
+  
 ### iOS push notification setup
 
+- Go to the Batch dashboard, create an iOS app
 - [Create a Push notification certificate and upload it to Batch.](https://batch.com/doc/ios/prerequisites.html) 
 - Download the [Batch SDK](https://batch.com/download#/iOS)
   - **unzip and move the `Batch.embeddedframework` folder to `<your-project-root>/ios/Frameworks/`** (create this directory if doesn't exist).
   - from here, drag and drop into the Frameworks of your project.
 - Add your Batch API key to Info.plist (note: make sure that your project's Build Settings includes the [DEBUG macro](https://stackoverflow.com/questions/9063100/xcode-ios-how-to-determine-whether-code-is-running-in-debug-release-build)):
-```xml
-<dict>
-    ...
-    <key>BatchAPIKeyDev</key>  
-    <string>%YOUR_BATCH_DEV_API_KEY%</string> <!-- Used when the app is built in development mode -->
-    <key>BatchAPIKeyProd</key>  
-    <string>%YOUR_BATCH_PROD_API_KEY%</string> 
-</dict>
-```
+    ```xml
+    <dict>
+        ...
+        <key>BatchAPIKeyDev</key>  
+        <string>%YOUR_BATCH_DEV_API_KEY%</string> <!-- Used when the app is built in development mode -->
+        <key>BatchAPIKeyProd</key>  
+        <string>%YOUR_BATCH_PROD_API_KEY%</string> 
+    </dict>
+    ```
 - Enable the Push notification entitlement in Xcode Capabilities tab
 - Call `registerForRemoteNotifications` from RN:
-```js
-import Batch from 'react-native-batch';
-
-Batch.registerForRemoteNotifications();
-```
+    ```js
+    import Batch from '@dangerfarms/react-native-batch';
+    
+    Batch.registerForRemoteNotifications();
+    ```
 
 ## Contributing
 
