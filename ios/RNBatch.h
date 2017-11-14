@@ -5,7 +5,8 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
+#import "../../../ios/Frameworks/Batch.embeddedframework/Batch.framework/Headers/Batch.h"
+
 @interface RNBatch : NSObject <RCTBridgeModule>
 
 @end
-  

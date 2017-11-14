@@ -1,0 +1,42 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.2'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://maven.batch.com/release"
+    }
+}
+
+dependencies {
+    compile 'com.facebook.react:react-native:+'
+    compile "com.batch.android:batch-sdk:1.9+"
+    compile "com.google.android.gms:play-services-base:+"
+    compile 'com.google.android.gms:play-services-gcm:+'
+}
+  

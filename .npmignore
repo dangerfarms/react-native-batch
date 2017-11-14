@@ -9,3 +9,4 @@ __snapshots/**
 .idea
 android.iml
 gradlew*
+*.tgz
