@@ -71,9 +71,9 @@ However if you run into issues, this section should help troubleshooting.
 ```xml
 <resources>
     ...
-    <string name="BATCH_API_KEY">DEVXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string> <!-- Development key -->
-    <!--<string name="BATCH_API_KEY">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string> --><!-- Production key -->
-    <string name="GCM_SENDER_ID">XXXXXXXXX</string>
+    <string name="BATCH_API_KEY_DEV">%YOUR_BATCH_DEV_API_KEY%</string> <!-- Used when built in development mode -->
+    <string name="BATCH_API_KEY_PROD">%YOUR_BATCH_PROD_API_KEY%</string>
+    <string name="GCM_SENDER_ID">%YOUR_GCM_SENDER_ID%</string>
 </resources>
 ```
 
@@ -84,13 +84,14 @@ Follow the instructions in the [Batch integration docs](https://dashboard.batch.
 - Download the SDK <LINK>.
   - unzip and move the `Batch.embeddedframework` folder to `<your-project-root>/ios/Frameworks/` (create this directory if doesn't exist).
   - from here, drag and drop into the Frameworks of your project.
-- Add your Batch API key to Info.plist:
+- Add your Batch API key to Info.plist (note: make sure that your project's Build Settings includes the [DEBUG macro](https://stackoverflow.com/questions/9063100/xcode-ios-how-to-determine-whether-code-is-running-in-debug-release-build)):
 ```xml
 <dict>
     ...
-    <key>BatchAPIKey</key>  
-    <string>%YOUR_BATCH_API_KEY%</string> <!-- Development key -->
-    <!--<string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string> --><!-- Production key -->
+    <key>BatchAPIKeyDev</key>  
+    <string>%YOUR_BATCH_DEV_API_KEY%</string> <!-- Used when the app is built in development mode -->
+    <key>BatchAPIKeyProd</key>  
+    <string>%YOUR_BATCH_PROD_API_KEY%</string> 
 </dict>
 ```
 - Enable the Push notification entitlement in Xcode Capabilities tab
