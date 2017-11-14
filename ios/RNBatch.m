@@ -14,10 +14,12 @@ RCT_EXPORT_MODULE()
 
     if (self != nil) {
         NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
+        NSString *batchAPIKey;
+
         #ifdef DEBUG
-            NSString *batchAPIKey = [info objectForKey:@"BatchAPIKeyDev"];
+            batchAPIKey = [info objectForKey:@"BatchAPIKeyDev"];
         #else
-            NSString *batchAPIKey = [info objectForKey:@"BatchAPIKeyProd"];
+            batchAPIKey = [info objectForKey:@"BatchAPIKeyProd"];
         #endif
 
         [Batch startWithAPIKey:batchAPIKey];
