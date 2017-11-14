@@ -15,10 +15,9 @@ Contributions welcome.
 ### While in heavy development
 
 1. Clone the project
-1. `yarn`
 1. `npm pack`
 1. Copy the resulting `.tgz` file to your project root
-1. Navigate to your projects root and run `yarn add ./[zipfile name].tgz`
+1. Navigate to your projects root and run `npm install ./react-native-batch-[version].tgz`
 
 ### In the near future
 
