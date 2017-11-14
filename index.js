@@ -1,5 +1,3 @@
-import { NativeModules } from 'react-native';
-
-const { RNBatch } = NativeModules;
-
-export default RNBatch;
+var NativeModules = require('react-native');
+var RNBatch = NativeModules.RNBatch;
+module.exports = RNBatch;
