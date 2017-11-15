@@ -38,14 +38,14 @@ RCT_EXPORT_METHOD(registerForRemoteNotifications)
     [BatchPush registerForRemoteNotifications];
 }
 
-RCT_EXPORT_METHOD(loginUser:(nullable NSString*)userID)
+RCT_EXPORT_METHOD(login:(nullable NSString*)userID)
 {
     BatchUserDataEditor *editor = [BatchUser editor];
     [editor setIdentifier:userID];
     [editor save];
 }
 
-RCT_EXPORT_METHOD(logoutUser)
+RCT_EXPORT_METHOD(logout)
 {
     BatchUserDataEditor *editor = [BatchUser editor];
     [editor setIdentifier:nil];

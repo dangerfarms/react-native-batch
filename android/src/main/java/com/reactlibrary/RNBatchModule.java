@@ -72,14 +72,14 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
   }
 
   @ReactMethod
-  public void loginUser(String userID) {
+  public void login(String userID) {
     Batch.User.editor()
       .setIdentifier(userID)
       .save();
   }
 
   @ReactMethod
-  public void logoutUser() {
+  public void logout() {
     Batch.User.editor()
       .setIdentifier(null)
       .save();
