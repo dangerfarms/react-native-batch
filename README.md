@@ -98,8 +98,8 @@ However if you run into issues, this section should help troubleshooting.
 Soon.
 
 ### Roadmap
-1. Initialize SDK
-1. Configure push notifications
+1. ~~Initialize SDK~~
+1. ~~Configure push notifications~~
 1. Custom User IDs 
 1. Deep linking 
 1. Rich notifications
