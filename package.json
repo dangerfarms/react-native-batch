@@ -1,6 +1,6 @@
 {
   "name": "@dangerfarms/react-native-batch",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React Native integration of the Batch SDK",
   "homepage": "https://github.com/dangerfarms/react-native-batch#readme",
   "keywords": [
