@@ -6,5 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _reactNative = require('react-native');
 
-var RNBatch = _reactNative.NativeModules.RNBatch;
-exports.default = RNBatch;
+var Batch = _reactNative.NativeModules.RNBatch;
+
+exports.default = Batch;
