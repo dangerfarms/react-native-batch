@@ -46,3 +46,7 @@ both FB and Deeplink handling:
   return handleRCTLinking && handleFB;
 }
 ```
+
+## Location
+
+### 

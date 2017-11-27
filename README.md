@@ -58,6 +58,10 @@ However if you run into issues, this section should help troubleshooting.
 
 See [push setup docs](docs/push-setup.md).
 
+## Location tracking
+
+See [location tracking setup docs](docs/location-tracking.md)
+
 ## Contributing
 
 Soon.
