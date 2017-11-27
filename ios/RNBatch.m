@@ -46,4 +46,20 @@ RCT_EXPORT_METHOD(logout)
     [editor save];
 }
 
+RCT_EXPORT_METHOD(trackLocation:(NSDictionary*)position)
+{
+    double latitude = [position[@"latitude"] doubleValue];
+    double longitude = [position[@"longitude"] doubleValue];
+    double accuracy = [position[@"accuracy"] doubleValue];
+    NSDate* now = [NSDate date];
+
+    CLLocation *location = [[CLLocation alloc] initWithCoordinate:CLLocationCoordinate2DMake(latitude, longitude)
+                                                         altitude:0
+                                               horizontalAccuracy:accuracy
+                                                 verticalAccuracy:-1
+                                                        timestamp:now];
+
+    [BatchUser trackLocation:location];
+}
+
 @end

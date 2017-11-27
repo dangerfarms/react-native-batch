@@ -49,4 +49,18 @@ both FB and Deeplink handling:
 
 ## Location
 
-### 
+### `trackLocation({ longitude: <Number>, latitude: <Number>, [accuracy: <Number>]})`
+Set the user's location to the passed in value.  
+`accuracy` is optional, and should be in meters.
+
+Usage: 
+```es2016
+navigator.geolocation.getCurrentPosition(
+    (position) => {
+        Batch.trackLocation(position.coords);        
+    },
+    (error) => {
+        // handle error
+    }
+);
+```

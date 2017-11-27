@@ -72,7 +72,7 @@ Soon.
 1. Custom User IDs 
 1. ~~Deep linking~~ 
 1. Rich notifications
-1. Location
+1. ~~Location~~
 1. Tracking Events.
 1. In App messaging
 1. Inbox support

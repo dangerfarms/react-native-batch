@@ -3,6 +3,7 @@ package com.reactlibrary;
 
 import android.app.Activity;
 import android.content.res.Resources;
+import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.util.Log;
@@ -17,6 +18,7 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 
@@ -112,7 +114,12 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
     }
 
     @ReactMethod
-    public void trackLocation(Location location) {
+    public void trackLocation(ReadableMap position) {
+        final Location location = new Location("RNBatch");
+        location.setLongitude(position.getDouble("longitude"));
+        location.setLatitude(position.getDouble("latitude"));
+        location.setAccuracy((float) position.getDouble("accuracy"));
+
         Batch.User.trackLocation(location);
     }
 
