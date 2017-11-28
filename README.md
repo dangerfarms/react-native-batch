@@ -3,12 +3,26 @@
 # react-native-batch
 React Native integration of the Batch.com SDK
 
+### Roadmap
+1. Initialize SDK :ballot_box_with_check:
+1. Configure push notifications :ballot_box_with_check:
+1. Custom User IDs :ballot_box_with_check:
+1. Deep linking :ballot_box_with_check:
+1. Rich notifications
+1. Location :ballot_box_with_check:
+1. Tracking Events :ballot_box_with_check:
+1. In App messaging
+1. Inbox support
+1. Attributes support
+1. Tracking Transactions
+1. ...
+
 # Aim
 The aim of this project is to provide a high quality, easy to use, full integration of the [Batch](https://batch.com/) SDK for react-native for Android and iOS.
 
 Contributions welcome.
 
-(This project is based on https://github.com/bamlab/react-native-batch-push)
+(The push notification parts of this project is based on https://github.com/bamlab/react-native-batch-push)
 
 ## Getting started
 
@@ -65,18 +79,3 @@ See [location tracking setup docs](docs/location-tracking.md)
 ## Contributing
 
 Soon.
-
-### Roadmap
-1. ~~Initialize SDK~~
-1. ~~Configure push notifications~~
-1. Custom User IDs 
-1. ~~Deep linking~~ 
-1. Rich notifications
-1. ~~Location~~
-1. Tracking Events.
-1. In App messaging
-1. Inbox support
-1. Attributes support
-1. Tracking Transactions
-1. ...
-
