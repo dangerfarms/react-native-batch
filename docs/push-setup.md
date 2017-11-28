@@ -39,7 +39,7 @@ Bear with me...
 - Enable the Push notification entitlement in Xcode Capabilities tab
 - Call `registerForRemoteNotifications` from RN:
     ```js
-    import Batch from '@dangerfarms/react-native-batch';
+    import Batch from 'react-native-batch';
     
     Batch.registerForRemoteNotifications();
     ```

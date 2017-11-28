@@ -1,6 +1,6 @@
 :warning: Work in progress :warning:
 
-# @dangerfarms/react-native-batch
+# react-native-batch
 React Native integration of the Batch.com SDK
 
 # Aim
@@ -12,13 +12,13 @@ Contributions welcome.
 
 ## Getting started
 
-`yarn add @dangerfarms/react-native-batch`
+`yarn add react-native-batch`
 
 Issues? See the Manual installation section.
 
 ## Usage
 ```javascript
-import Batch from '@dangerfarms/react-native-batch';
+import Batch from 'react-native-batch';
 
 Batch.registerForRemoteNotifications();
 ```
@@ -35,7 +35,7 @@ However if you run into issues, this section should help troubleshooting.
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `@dangerfarms/react-native-batch` and add `RNBatch.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-batch` and add `RNBatch.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNBatch.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -47,7 +47,7 @@ However if you run into issues, this section should help troubleshooting.
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':@dangerfarms_react-native-batch'
-  	project(':@dangerfarms_react-native-batch').projectDir = new File(rootProject.projectDir, 	'../node_modules/@dangerfarms/react-native-batch/android')
+  	project(':@dangerfarms_react-native-batch').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-batch/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
