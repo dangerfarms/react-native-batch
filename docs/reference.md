@@ -67,7 +67,7 @@ navigator.geolocation.getCurrentPosition(
 
 ## Events
 
-### `trackEven(eventName[, label])`
+### `trackEvent(eventName[, label])`
 Track an `<eventName>` event with label `<label>`.
 
 Event names are strings. They should be made of letters, numbers or underscores ([a-z0-9_]) 
