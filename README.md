@@ -6,7 +6,7 @@ React Native integration of the Batch.com SDK
 1. :ballot_box_with_check: Configure push notifications 
 1. :ballot_box_with_check: Custom User IDs
 1. :ballot_box_with_check: Deep linking
-1. :warning: Rich notifications :warning:
+1. :warning: Rich notifications 
 1. :ballot_box_with_check: Location
 1. :ballot_box_with_check: Tracking Events
 1. :warning: In App messaging
