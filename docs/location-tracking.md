@@ -1,5 +1,7 @@
 # Location tracking
 
+For usage see the [full reference](./reference.md#location)
+
 ## Setup
 
 ### Android 
@@ -62,3 +64,12 @@ If you want to send locations at certain times, or you want to be consistent
 with iOS, you can use the [react-native methods](reference.md#Location) without
 any additional setup (you will need the permission defined in the Manifest 
 of course).
+
+### iOS
+
+In your Info.plist add the following line (default if you are using create-react-native-app):
+```xml
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string/>
+```
+and you are good to go!
