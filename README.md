@@ -9,10 +9,12 @@ React Native integration of the Batch.com SDK
 1. :warning: Rich notifications 
 1. :ballot_box_with_check: Location
 1. :ballot_box_with_check: Tracking Events
-1. :warning: In App messaging
-1. :warning: Inbox support
-1. :warning: Attributes support 
-1. :warning: Tracking Transactions 
+1. Todo: In App messaging
+1. Todo: Inbox support
+1. Todo: Attributes support 
+1. Todo: Tracking Transactions 
+1. Todo: Tests
+1. Todo: Linting
 1. ...
 
 # Aim
@@ -20,7 +22,7 @@ The aim of this project is to provide a high quality, easy to use, full integrat
 
 Contributions welcome.
 
-(The push notification parts of this project is based on https://github.com/bamlab/react-native-batch-push)
+Credit: The push notification parts of this project is based on [bamlab's react-native-batch-push package](https://github.com/bamlab/react-native-batch-push)
 
 ## Getting started
 
@@ -35,7 +37,7 @@ import Batch from 'react-native-batch';
 Batch.registerForRemoteNotifications();
 ```
 
-See [full reference](https://github.com/dangerfarms/react-native-batch/docs/reference.md).
+See [full reference](https://github.com/dangerfarms/react-native-batch/blob/master/docs/reference.md).
 
 ## Manual installation
 
@@ -68,12 +70,14 @@ However if you run into issues, this section should help troubleshooting.
 
 ## Push notification setup 
 
-See [push setup docs](https://github.com/dangerfarms/react-native-batch/docs/push-setup.md).
+See [push setup docs](https://github.com/dangerfarms/react-native-batch/blob/master/docs/push-setup.md).
 
 ## Location tracking
 
-See [location tracking setup docs](https://github.com/dangerfarms/react-native-batch/docs/location-tracking.md)
+See [location tracking setup docs](https://github.com/dangerfarms/react-native-batch/blob/master/docs/location-tracking.md)
 
 ## Contributing
 
-Soon.
+All PRs welcome.  
+The project is still on progress, so there are no tests, no linting in place.
+
