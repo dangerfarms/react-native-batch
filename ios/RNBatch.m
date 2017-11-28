@@ -62,4 +62,14 @@ RCT_EXPORT_METHOD(trackLocation:(NSDictionary*)position)
     [BatchUser trackLocation:location];
 }
 
+RCT_EXPORT_METHOD(trackEventWithLabel:(NSString*) eventName label:(NSString*) label)
+{
+    [BatchUser trackEvent:eventName withLabel:label];
+}
+
+RCT_EXPORT_METHOD(trackEventWithName:(NSString*) eventName)
+{
+    [BatchUser trackEvent:eventName];
+}
+
 @end
