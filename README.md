@@ -1,20 +1,18 @@
-:warning: Work in progress :warning:
-
 # react-native-batch
 React Native integration of the Batch.com SDK
 
-### Roadmap
-1. Initialize SDK :ballot_box_with_check:
-1. Configure push notifications :ballot_box_with_check:
-1. Custom User IDs :ballot_box_with_check:
-1. Deep linking :ballot_box_with_check:
-1. Rich notifications
-1. Location :ballot_box_with_check:
-1. Tracking Events :ballot_box_with_check:
-1. In App messaging
-1. Inbox support
-1. Attributes support
-1. Tracking Transactions
+# Roadmap
+1. :ballot_box_with_check: Initialize SDK 
+1. :ballot_box_with_check: Configure push notifications 
+1. :ballot_box_with_check: Custom User IDs
+1. :ballot_box_with_check: Deep linking
+1. :warning: Rich notifications :warning:
+1. :ballot_box_with_check: Location
+1. :ballot_box_with_check: Tracking Events
+1. :warning: In App messaging
+1. :warning: Inbox support
+1. :warning: Attributes support 
+1. :warning: Tracking Transactions 
 1. ...
 
 # Aim
@@ -37,7 +35,7 @@ import Batch from 'react-native-batch';
 Batch.registerForRemoteNotifications();
 ```
 
-See [full reference](docs/reference.md).
+See [full reference](https://github.com/dangerfarms/react-native-batch/docs/reference.md).
 
 ## Manual installation
 
@@ -70,11 +68,11 @@ However if you run into issues, this section should help troubleshooting.
 
 ## Push notification setup 
 
-See [push setup docs](docs/push-setup.md).
+See [push setup docs](https://github.com/dangerfarms/react-native-batch/docs/push-setup.md).
 
 ## Location tracking
 
-See [location tracking setup docs](docs/location-tracking.md)
+See [location tracking setup docs](https://github.com/dangerfarms/react-native-batch/docs/location-tracking.md)
 
 ## Contributing
 
