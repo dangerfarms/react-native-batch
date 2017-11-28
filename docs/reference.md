@@ -64,3 +64,15 @@ navigator.geolocation.getCurrentPosition(
     }
 );
 ```
+
+## Events
+
+### `trackEven(eventName[, label])`
+Track an `<eventName>` event with label `<label>`.
+
+Event names are strings. They should be made of letters, numbers or underscores ([a-z0-9_]) 
+and can't be longer than 30 characters.
+Event's can have a label, which is a string with no limitations (optional).
+
+Note: in the Batch SDK a custom JSON data object can also be attached to an event. This is not 
+yet supported in this package. 

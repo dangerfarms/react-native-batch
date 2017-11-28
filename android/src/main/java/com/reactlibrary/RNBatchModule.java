@@ -123,6 +123,16 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
         Batch.User.trackLocation(location);
     }
 
+    @ReactMethod
+    public void trackEventWithLabel(String eventName, String label) {
+        Batch.User.trackEvent(eventName, label);
+    }
+
+    @ReactMethod
+    public void trackEventWithName(String eventName) {
+        Batch.User.trackEvent(eventName);
+    }
+
     @Override
     public void onHostResume() {
         startBatch();
