@@ -72,4 +72,16 @@ RCT_EXPORT_METHOD(trackEventWithName:(NSString*) eventName)
     [BatchUser trackEvent:eventName];
 }
 
+RCT_EXPORT_METHOD(setMobileLandingFontOverride:(NSDictionary*) normal bold:(NSDictionary*) bold)
+{
+    UIFont* font = [UIFont fontWithName:normal[@"path"] size: [normal[@"size"] doubleValue]];
+    UIFont* boldFont = [UIFont fontWithName:bold[@"path"] size: [bold[@"size"] doubleValue]];;
+    [BatchMessaging setFontOverride:font boldFont:boldFont];
+}
+
+RCT_EXPORT_METHOD(resetMobileLandingFont)
+{
+    [BatchMessaging setFontOverride:nil boldFont:nil];
+}
+
 @end

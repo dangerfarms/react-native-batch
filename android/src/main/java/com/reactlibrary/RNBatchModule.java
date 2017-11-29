@@ -3,6 +3,7 @@ package com.reactlibrary;
 
 import android.app.Activity;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -131,6 +132,18 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
     @ReactMethod
     public void trackEventWithName(String eventName) {
         Batch.User.trackEvent(eventName);
+    }
+
+    @ReactMethod
+    public void setMobileLandingFontOverride(ReadableMap normalFont, ReadableMap boldFont) {
+        Typeface normalTypeface = Typeface.createFromAsset(this.reactContext.getAssets(), normalFont.getString("path"));
+        Typeface boldTypeface = Typeface.createFromAsset(this.reactContext.getAssets(), boldFont.getString("path"));
+        Batch.Messaging.setTypefaceOverride(normalTypeface, boldTypeface);
+    }
+
+    @ReactMethod
+    public void resetMobileLandingFont() {
+        Batch.Messaging.setTypefaceOverride(null, null);
     }
 
     @Override

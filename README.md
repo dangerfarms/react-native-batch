@@ -9,7 +9,8 @@ React Native integration of the Batch.com SDK
 1. Todo: Rich notifications 
 1. :ballot_box_with_check: Location
 1. :ballot_box_with_check: Tracking Events
-1. Todo: In App messaging
+1. :ballot_box_with_check: Mobile Landing (with limitations)
+1. :ballot_box_with_check: In App messaging (with limitations)
 1. Todo: Inbox support
 1. Todo: Attributes support 
 1. Todo: Tracking Transactions 

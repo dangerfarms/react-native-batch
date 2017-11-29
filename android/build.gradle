@@ -2,6 +2,7 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
 
     dependencies {
@@ -12,12 +13,12 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 27
     buildToolsVersion '25.0.0'
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -31,12 +32,15 @@ repositories {
     maven {
         url "http://maven.batch.com/release"
     }
+    google()
 }
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile "com.batch.android:batch-sdk:1.9+"
-    compile "com.google.android.gms:play-services-base:+"
+    compile 'com.batch.android:batch-sdk:1.10+'
+    compile 'com.google.android.gms:play-services-base:+'
     compile 'com.google.android.gms:play-services-gcm:+'
+    compile 'com.android.support:support-v4:27.0.1'
+    compile 'com.android.support:appcompat-v7:27.0.1'
 }
   

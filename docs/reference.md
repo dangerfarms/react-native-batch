@@ -76,3 +76,42 @@ Event's can have a label, which is a string with no limitations (optional).
 
 Note: in the Batch SDK a custom JSON data object can also be attached to an event. This is not 
 yet supported in this package. 
+
+
+## Mobile Landing
+Mobile Landing should work in automatic mode out of the box.
+
+For now this package doesn't support manual mode or Do not Disturb mode (contributions welcome).
+
+You can however set custom typeface/font.
+
+### `setMobileLandingFontOverride(normalFont, boldFont)`
+Override fonts (iOS) or typeface (Android) for Mobile Landing / In App Messages.
+Note that the Batch SDK allows only typeface overrides for Android, while it allows font-size
+as well for iOS.
+
+You have to make sure the fonts are available as assets in your project.
+
+Example usage: 
+```js
+const normalFont = {
+    path: 'MyFont.ttf', 
+    size: 10 // only used in iOS
+};
+const boldFont = {
+    path: 'MyFont-Bold.ttf', // You must provide a bold font, even if it is the same as the normal font 
+    size: 10 // only used in iOS
+};
+
+Batch.setMobileLandingFontOverride(normalFont, boldFont);
+```
+
+### `resetMobileLandingFont()`
+Reset font override to default.
+
+## In App Messages
+Should work out of the box.
+
+For now this package doesn't support manual mode or Do not Disturb mode (contributions welcome).
+
+For font overrides see the Mobile Landing section above.
