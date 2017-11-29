@@ -44,5 +44,15 @@ Bear with me...
     Batch.registerForRemoteNotifications();
     ```
 
+### Rich notifications
+> If you don't intend to use rich notifications, you can skip this part.
+
+**Anrdoid**  
+Should work out of the box, once push notifications are set up.
+
+**iOS**  
+Follow the [Batch guide](https://batch.com/doc/ios/sdk-integration/rich-notifications-setup.html) — it's super easy!
+
 And you are ready to go!
+
 :doughnut:

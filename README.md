@@ -1,25 +1,22 @@
 # react-native-batch
-React Native integration of the Batch.com SDK
+React Native integration of the [Batch](https://batch.com/) SDK for Android and iOS.
 
 # Roadmap
 1. :ballot_box_with_check: Initialize SDK 
 1. :ballot_box_with_check: Configure push notifications 
 1. :ballot_box_with_check: Custom User IDs
 1. :ballot_box_with_check: Deep linking
-1. Todo: Rich notifications 
+1. :ballot_box_with_check: Rich notifications (you still need to do some manual integration)
 1. :ballot_box_with_check: Location
 1. :ballot_box_with_check: Tracking Events
-1. :ballot_box_with_check: Mobile Landing (with limitations)
-1. :ballot_box_with_check: In App messaging (with limitations)
+1. :ballot_box_with_check: Mobile Landing (with some limitations)
+1. :ballot_box_with_check: In App messaging (with some limitations)
 1. Todo: Inbox support
 1. Todo: Attributes support 
 1. Todo: Tracking Transactions 
-1. Todo: Tests
-1. Todo: Linting
+1. Todo: Write tests
+1. Todo: Add linting to help contributors
 1. ...
-
-# Aim
-The aim of this project is to provide a high quality, easy to use, full integration of the [Batch](https://batch.com/) SDK for react-native for Android and iOS.
 
 Contributions welcome.
 
@@ -80,5 +77,5 @@ See [location tracking setup docs](https://github.com/dangerfarms/react-native-b
 ## Contributing
 
 All PRs welcome.  
-The project is still on progress, so there are no tests, no linting in place.
+The project is still on progress, so there are no tests, and no linting in place.
 

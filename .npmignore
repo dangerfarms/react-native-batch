@@ -7,6 +7,9 @@ __snapshots/**
 .yarn.lock
 .gitattributes
 .idea
-android.iml
 gradlew*
 *.tgz
+android/.gradle
+android/build
+android/gradle
+*.iml
