@@ -135,9 +135,9 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
     }
 
     @ReactMethod
-    public void setMobileLandingFontOverride(ReadableMap normalFont, ReadableMap boldFont) {
-        Typeface normalTypeface = Typeface.createFromAsset(this.reactContext.getAssets(), normalFont.getString("path"));
-        Typeface boldTypeface = Typeface.createFromAsset(this.reactContext.getAssets(), boldFont.getString("path"));
+    public void setMobileLandingFontOverride(String normalFont, String boldFont) {
+        Typeface normalTypeface = Typeface.createFromAsset(this.reactContext.getAssets(), normalFont);
+        Typeface boldTypeface = Typeface.createFromAsset(this.reactContext.getAssets(), boldFont);
         Batch.Messaging.setTypefaceOverride(normalTypeface, boldTypeface);
     }
 
