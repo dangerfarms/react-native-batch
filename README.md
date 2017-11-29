@@ -58,12 +58,12 @@ However if you run into issues, this section should help troubleshooting.
   - Add `new RNBatchPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':@dangerfarms_react-native-batch'
-  	project(':@dangerfarms_react-native-batch').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-batch/android')
+  	include ':react-native-batch'
+  	project(':react-native-batch').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-batch/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':@dangerfarms_react-native-batch')
+      compile project(':react-native-batch')
   	```
 
 ## Push notification setup 
