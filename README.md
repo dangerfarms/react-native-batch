@@ -6,9 +6,9 @@ React Native integration of the [Batch](https://batch.com/) SDK for Android and 
 1. :ballot_box_with_check: Configure push notifications 
 1. :ballot_box_with_check: Custom User IDs
 1. :ballot_box_with_check: Deep linking
-1. :ballot_box_with_check: Rich notifications (you still need to do some manual integration)
+1. :ballot_box_with_check: Rich notifications (you still need to do some manual integration, actions not supported yet)
 1. :ballot_box_with_check: Location
-1. :ballot_box_with_check: Tracking Events
+1. :ballot_box_with_check: Tracking Events (JSON object payloads not supported yet)
 1. :ballot_box_with_check: Mobile Landing (with some limitations)
 1. :ballot_box_with_check: In App messaging (with some limitations)
 1. Todo: Inbox support
