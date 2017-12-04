@@ -49,7 +49,7 @@ However if you run into issues, this section should help troubleshooting.
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-batch` and add `RNBatch.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNBatch.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+4. Run your project (`Cmd+R`)
 
 #### Android
 
@@ -66,7 +66,7 @@ However if you run into issues, this section should help troubleshooting.
       compile project(':react-native-batch')
   	```
 
-## Push notification setup 
+## SDK integration and push notification setup 
 
 See [push setup docs](https://github.com/dangerfarms/react-native-batch/blob/master/docs/push-setup.md).
 
