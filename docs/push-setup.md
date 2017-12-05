@@ -23,9 +23,7 @@ Bear with me...
 
 - Go to the Batch dashboard, create an iOS app
 - [Create a Push notification certificate and upload it to Batch.](https://batch.com/doc/ios/prerequisites.html) 
-- Download the [Batch SDK](https://batch.com/download#/iOS)
-  - **unzip and move the `Batch.embeddedframework` folder to `<your-project-root>/ios/Frameworks/`** (create this directory if doesn't exist).
-  - from here, drag and drop into the Frameworks of your project.
+- Follow the instructions to install the Batch SDK pod. (Currently only pod setup is supported.)
 - If you are using `react-native-config`, use the .env files to set your api key and skip the next step.
 - Add your Batch API key to Info.plist (note: make sure that your project's Build Settings includes the [DEBUG macro](https://stackoverflow.com/questions/9063100/xcode-ios-how-to-determine-whether-code-is-running-in-debug-release-build)):
     ```xml
