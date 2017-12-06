@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.dangerfarms.reactnative.batch;
 
 import android.app.Activity;
 import android.content.res.Resources;

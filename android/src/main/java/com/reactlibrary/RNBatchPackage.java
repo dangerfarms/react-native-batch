@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.dangerfarms.reactnative.batch;
 
 import java.util.Arrays;
 import java.util.Collections;

@@ -54,7 +54,7 @@ However if you run into issues, this section should help troubleshooting.
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNBatchPackage;` to the imports at the top of the file
+  - Add `import com.dangerfarms.reactnative.batch.RNBatchPackage;` to the imports at the top of the file
   - Add `new RNBatchPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
