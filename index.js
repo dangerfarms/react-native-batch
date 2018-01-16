@@ -16,9 +16,9 @@ Batch.trackEvent = function trackEvent(eventName, label) {
             'numbers, and underscore'));
     }
     if (!label) {
-        return Batch.trackEventWithName(eventName);
+        return Batch.trackEventWithName(eventName.toString());
     }
-    return Batch.trackEventWithLabel(eventName, label);
+    return Batch.trackEventWithLabel(eventName.toString(), label.toString());
 };
 
 exports.default = Batch;
