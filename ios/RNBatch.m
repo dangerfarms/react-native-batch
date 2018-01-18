@@ -67,6 +67,11 @@ RCT_EXPORT_METHOD(trackEventWithLabel:(NSString*) eventName label:(NSString*) la
     [BatchUser trackEvent:eventName withLabel:label];
 }
 
+RCT_EXPORT_METHOD(trackEventWithLabelAndData:(NSString*) eventName label:(NSString*) label data:(NSDictionary*) data)
+{
+    [BatchUser trackEvent:eventName withLabel:label data:data];
+}
+
 RCT_EXPORT_METHOD(trackEventWithName:(NSString*) eventName)
 {
     [BatchUser trackEvent:eventName];

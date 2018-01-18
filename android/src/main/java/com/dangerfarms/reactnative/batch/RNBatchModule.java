@@ -125,6 +125,11 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
     }
 
     @ReactMethod
+    public void trackEventWithLabelAndData(String eventName, String label, ReadableMap data) {
+        Batch.User.trackEvent(eventName, label, data);
+    }
+
+    @ReactMethod
     public void trackEventWithLabel(String eventName, String label) {
         Batch.User.trackEvent(eventName, label);
     }

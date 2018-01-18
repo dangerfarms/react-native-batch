@@ -67,16 +67,14 @@ navigator.geolocation.getCurrentPosition(
 
 ## Events
 
-### `trackEvent(eventName[, label])`
+### `trackEvent(eventName[, label, data])`
 Track an `<eventName>` event with label `<label>`.
 
 Event names are strings. They should be made of letters, numbers or underscores ([a-z0-9_]) 
 and can't be longer than 30 characters.
 Event's can have a label, which is a string with no limitations (optional).
-
-Note: in the Batch SDK a custom JSON data object can also be attached to an event. This is not 
-yet supported in this package. 
-
+Event's can also have a custom data object, which is recorded by Batch, but currently cannot be
+used for targeting.
 
 ## Mobile Landing
 Mobile Landing should work in automatic mode out of the box.
