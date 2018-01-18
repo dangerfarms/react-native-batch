@@ -13,6 +13,7 @@ import com.batch.android.Batch;
 import com.batch.android.BatchInboxFetcher;
 import com.batch.android.BatchInboxNotificationContent;
 import com.batch.android.Config;
+import com.batch.android.json.JSONException;
 import com.batch.android.json.JSONObject;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.LifecycleEventListener;
@@ -126,7 +127,7 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
     }
 
     @ReactMethod
-    public void trackEventWithLabelAndData(String eventName, String label, ReadableMap data) {
+    public void trackEventWithLabelAndData(String eventName, String label, ReadableMap data) throws JSONException {
         JSONObject jsonData = MapUtil.toJSONObject(data);
         Batch.User.trackEvent(eventName, label, jsonData);
     }

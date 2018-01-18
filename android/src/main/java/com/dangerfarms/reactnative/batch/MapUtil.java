@@ -15,9 +15,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.json.JSONException;
+import com.batch.android.json.JSONArray;
+import com.batch.android.json.JSONObject;
+import com.batch.android.json.JSONException;
 
 public class MapUtil {
 
