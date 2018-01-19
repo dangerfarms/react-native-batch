@@ -155,8 +155,8 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
     }
 
     @ReactMethod
-    public void getInstallationId() {
-        Batch.User.getInstallationID();
+    public void getInstallationId(Promise promise) {
+        promise.resolve(Batch.User.getInstallationID());
     }
 
     @Override

@@ -94,9 +94,11 @@ RCT_EXPORT_METHOD(resetMobileLandingFont)
     [BatchMessaging setFontOverride:nil boldFont:nil];
 }
 
-RCT_EXPORT_METHOD(getInstallationId)
+RCT_REMAP_METHOD(getInstallationId,
+                 resolver:(RCTPromiseResolveBlock)resolve
+                 rejecter:(RCTPromiseRejectBlock)reject)
 {
-    [BatchUser installationID];
+    resolve([BatchUser installationID]);
 }
 
 @end

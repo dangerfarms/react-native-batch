@@ -108,4 +108,9 @@ For font overrides see the Mobile Landing section above.
 ## Debugging
 
 ### `getInstallationId()`
-Returns the installation ID.
+Returns the a promise which resolves to the installation ID.
+
+```js
+await const installationId = getInstallationId();
+console.log(installationId);
+```
