@@ -94,4 +94,9 @@ RCT_EXPORT_METHOD(resetMobileLandingFont)
     [BatchMessaging setFontOverride:nil boldFont:nil];
 }
 
+RCT_EXPORT_METHOD(getInstallationId)
+{
+    [BatchUser installationID];
+}
+
 @end

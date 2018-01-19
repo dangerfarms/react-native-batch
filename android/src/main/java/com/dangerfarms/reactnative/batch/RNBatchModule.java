@@ -154,6 +154,11 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
         Batch.Messaging.setTypefaceOverride(null, null);
     }
 
+    @ReactMethod
+    public void getInstallationId() {
+        Batch.User.getInstallationID();
+    }
+
     @Override
     public void onHostResume() {
         startBatch();

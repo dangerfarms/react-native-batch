@@ -103,3 +103,9 @@ Should work out of the box.
 For now this package doesn't support manual mode or Do not Disturb mode (contributions welcome).
 
 For font overrides see the Mobile Landing section above.
+
+
+## Debugging
+
+### `getInstallationId()`
+Returns the installation ID.

@@ -11,6 +11,7 @@ React Native integration of the [Batch](https://batch.com/) SDK for Android and 
 1. :ballot_box_with_check: Tracking Events
 1. :ballot_box_with_check: Mobile Landing (with some limitations)
 1. :ballot_box_with_check: In App messaging (with some limitations)
+1. :ballot_box_with_check: Get installation ID (for debugging)
 1. Todo: Inbox support
 1. Todo: Attributes support 
 1. Todo: Tracking Transactions 
