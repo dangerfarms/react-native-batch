@@ -46,6 +46,12 @@ public class RNBatchModule extends ReactContextBaseJavaModule implements Lifecyc
             this.batchAPIKey = resources.getString(resources.getIdentifier("BATCH_API_KEY", "string", packageName));
 
             Batch.Push.setGCMSenderId(resources.getString(resources.getIdentifier("GCM_SENDER_ID", "string", packageName)));
+
+            Integer pushIcon = resources.getIdentifier("push_icon", "drawable", packageName);
+            if (pushIcon != 0) {
+                Batch.Push.setSmallIconResourceId(pushIcon);
+            }
+
             Batch.setConfig(new Config(this.batchAPIKey));
 
             startBatch();

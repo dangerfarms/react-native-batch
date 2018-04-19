@@ -18,6 +18,8 @@ Bear with me...
       // resValue "string", "BATCH_API_KEY", "%YOUR_BATCH_API_KEY%" // production
     }
     ```
+- (Optional) Add your custom push icon in `android/app/src/main/res/drawable-<size>/push_icon.png` folders.
+[More info on status icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design_status_bar.html)
   
 ### iOS push notification setup
 

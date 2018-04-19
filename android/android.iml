@@ -94,10 +94,9 @@
     <orderEntry type="library" exported="" name="com.android.support:animated-vector-drawable-27.0.1" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:appcompat-v7-27.0.1" level="project" />
     <orderEntry type="library" exported="" name="com.squareup.okhttp:okhttp-ws:2.5.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-gcm-license-11.8.0" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-base-15.0.0" level="project" />
     <orderEntry type="library" exported="" name="android.arch.lifecycle:common:1.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.facebook.fresco:fresco-0.8.1" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-base-license-11.8.0" level="project" />
     <orderEntry type="library" exported="" name="com.facebook.fresco:imagepipeline-0.8.1" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-core-utils-27.0.1" level="project" />
     <orderEntry type="library" exported="" name="com.squareup.okhttp:okhttp:2.5.0@jar" level="project" />
@@ -105,33 +104,30 @@
     <orderEntry type="library" exported="" name="android.arch.lifecycle:runtime-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.facebook.react:react-native-0.20.1" level="project" />
     <orderEntry type="library" exported="" name="com.nineoldandroids:library:2.4.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-basement-license-11.8.0" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-iid-11.8.0" level="project" />
     <orderEntry type="library" exported="" name="com.google.code.findbugs:jsr305:3.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-annotations:27.0.1@jar" level="project" />
     <orderEntry type="library" exported="" name="com.fasterxml.jackson.core:jackson-core:2.2.3@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-stats-15.0.0" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-iid-15.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:recyclerview-v7-23.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-iid-license-11.8.0" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-basement-15.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.facebook.fresco:drawee-0.8.1" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-vector-drawable-27.0.1" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-tasks-15.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.facebook.stetho:stetho-okhttp:1.2.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.parse.bolts:bolts-android:1.1.4@jar" level="project" />
     <orderEntry type="library" exported="" name="com.batch.android:batch-sdk-1.10.2" level="project" />
     <orderEntry type="library" exported="" name="commons-cli:commons-cli:1.2@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-basement-11.8.0" level="project" />
     <orderEntry type="library" exported="" name="android.arch.core:common:1.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-compat-27.0.1" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-core-ui-27.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-tasks-11.8.0" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-gcm-15.0.0" level="project" />
     <orderEntry type="library" exported="" name="com.squareup.okio:okio:1.6.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.facebook.stetho:stetho:1.2.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-media-compat-27.0.1" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-fragment-27.0.1" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-gcm-11.8.0" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-base-11.8.0" level="project" />
     <orderEntry type="library" exported="" name="com.facebook.fresco:imagepipeline-okhttp-0.8.1" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-v4-27.0.1" level="project" />
     <orderEntry type="library" exported="" name="org.webkit:android-jsc-r174650" level="project" />
-    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-tasks-license-11.8.0" level="project" />
   </component>
 </module>
