@@ -2,7 +2,7 @@
 
 ## Push notifications
 
-### `registerforRemoteNotifications()`
+### `registerForRemoteNotifications()`
 
 Required in iOS only. 
 
