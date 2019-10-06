@@ -37,7 +37,7 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile 'com.batch.android:batch-sdk:1.10+'
+    compile 'com.batch.android:batch-sdk:1.14+'
     compile 'com.google.android.gms:play-services-base:+'
     compile 'com.google.android.gms:play-services-gcm:+'
     compile 'com.android.support:support-v4:27.0.1'
