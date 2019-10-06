@@ -1,12 +1,8 @@
-
 #import "RNBatch.h"
+#import <Batch/Batch.h>
 
 @implementation RNBatch
 
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
 RCT_EXPORT_MODULE()
 
 - (id)init {
@@ -20,11 +16,6 @@ RCT_EXPORT_MODULE()
     }
 
     return self;
-}
-
-+ (BOOL)requiresMainQueueSetup
-{
-    return YES;
 }
 
 RCT_EXPORT_METHOD(registerForRemoteNotifications)
