@@ -36,11 +36,11 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.batch.android:batch-sdk:1.14+'
-    compile 'com.google.android.gms:play-services-base:+'
-    compile 'com.google.android.gms:play-services-gcm:+'
-    compile 'com.android.support:support-v4:27.0.1'
-    compile 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.batch.android:batch-sdk:1.14+'
+    implementation 'com.google.android.gms:play-services-base:+'
+    implementation 'com.google.android.gms:play-services-gcm:+'
+    implementation 'com.android.support:support-v4:27.0.1'
+    implementation 'com.android.support:appcompat-v7:27.0.1'
 }
   
