@@ -1,13 +1,14 @@
-
 #import "RNBatch.h"
+#import <Batch/Batch.h>
 
 @implementation RNBatch
+
+RCT_EXPORT_MODULE()
 
 - (dispatch_queue_t)methodQueue
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE()
 
 - (id)init {
     self = [super init];
