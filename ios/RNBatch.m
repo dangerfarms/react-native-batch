@@ -5,6 +5,11 @@
 
 RCT_EXPORT_MODULE()
 
+- (dispatch_queue_t)methodQueue
+{
+    return dispatch_get_main_queue();
+}
+
 - (id)init {
     self = [super init];
 
@@ -16,6 +21,11 @@ RCT_EXPORT_MODULE()
     }
 
     return self;
+}
+
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
 }
 
 RCT_EXPORT_METHOD(registerForRemoteNotifications)
